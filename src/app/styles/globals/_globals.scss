@@ -28,6 +28,8 @@ h2 {
   @include fluid-text(21, 20);
 
   line-height: 31.5px;
+
+  opacity: 0.4;
 }
 
 h3 {
@@ -145,5 +147,79 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 section {
-  padding-block: 20px;
+  padding-block: 25px;
+}
+
+.projects-title {
+  font-weight: 400;
+
+  text-transform: uppercase;
+
+  margin-top: 16px;
+}
+
+.projects-subtitle {
+  font-weight: 400;
+
+  margin-top: 2px;
+
+  text-transform: uppercase;
+
+  opacity: 0.4;
+}
+
+.projects-image-block {
+  position: relative;
+
+  min-height: 50vh;
+
+  overflow: hidden;
+
+  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    transition: transform 0.5s ease;
+  }
+
+  @include desktop-above {
+    min-height: 50vh;
+  }
+
+  @include desktop {
+    min-height: 272px;
+  }
+
+  @include tablet {
+    min-height: 240px;
+  }
+
+  @include mobile {
+    min-height: 232px;
+  }
+}
+
+.projects-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+  column-gap: 11px;
+  row-gap: 25px;
+
+  @include desktop {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @include tablet {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include mobile {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }

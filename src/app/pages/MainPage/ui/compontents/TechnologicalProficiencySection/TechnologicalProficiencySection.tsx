@@ -41,7 +41,7 @@ const TechnologicalProficiencySection: React.FC<TechnologicalProficiencySectionP
         <p className="table-grid-item-2">
           React, NextJs, Jest, Redux, Redux Toolkit, React.createContext, React Router Dom
         </p>
-        <h3 className="table-grid-item-1">Build and Dependency Management:</h3>
+        <h3 className="table-grid-item-1">Build Management:</h3>
         <p className="table-grid-item-2">Webpack, Vite, Babel</p>
         <h3 className="table-grid-item-1">API Communication: </h3>
         <p className="table-grid-item-2">Rest, GraphQl</p>

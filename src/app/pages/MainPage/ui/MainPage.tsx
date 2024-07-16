@@ -3,6 +3,7 @@ import clx from "classnames";
 import styles from "./MainPage.module.scss";
 import ProfessionalSummarySection from "./compontents/ProfessionalSummarySection/ProfessionalSummarySection";
 import TechnologicalProficiencySection from "./compontents/TechnologicalProficiencySection/TechnologicalProficiencySection";
+import ProjectsOverviewSection from "./compontents/ProjectsOverviewSection/ProjectsOverviewSection";
 
 interface MainPageProps {
   className?: string;
@@ -19,6 +20,7 @@ const MainPage: React.FC<MainPageProps> = (props) => {
     <div className={mainpageClasses}>
       <ProfessionalSummarySection />
       <TechnologicalProficiencySection />
+      <ProjectsOverviewSection />
     </div>
   );
 };
