@@ -8,16 +8,11 @@
 
   --transition-duration: 0.2s;
 
-  --navbar-height: 60px;
+  --navbar-height: 52px;
   --sidebar-width: 73px;
   --footer-height: 70px;
 
   @include mobile {
     --container-padding-x: 10px;
-  }
-
-  /*mobile*/
-  @include mobile {
-    --navbar-height: 93px;
   }
 }
