@@ -1,3 +1,64 @@
+@import "../../../app/styles/media/media";
+
 .Footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  height: 190px;
+  width: 100%;
+
   margin-top: auto;
+
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+
+  background-color: rgb(28, 28, 28);
+
+  p {
+    --paragraphMarginBottom: 5px;
+  }
+
+  @include mobile {
+    height: 260px;
+  }
+
+  > .FooterWrapper {
+    display: grid;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+
+    > .link {
+      grid-column-start: 1;
+      grid-column-end: 5;
+
+      @include mobile {
+        grid-column-start: 1;
+        grid-column-end: -1;
+      }
+    }
+
+    > .socials {
+      grid-column-start: 7;
+      grid-column-end: 8;
+
+      @include mobile {
+        grid-column-start: 1;
+        grid-column-end: -1;
+      }
+    }
+
+    > .email {
+      grid-column-start: 9;
+      grid-column-end: -1;
+
+      @include mobile {
+        grid-column-start: 1;
+        grid-column-end: -1;
+      }
+    }
+
+    @include mobile {
+      column-gap: 15px;
+      row-gap: 27px;
+    }
+  }
 }
